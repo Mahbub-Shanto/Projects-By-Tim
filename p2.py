@@ -16,7 +16,8 @@ else:
 #importing random number generator
 import random
 random_number = random.randrange(top_of_range)
-
+#to keep track of the guesses .That means how many times the while loop has executed
+guesses=0
 
     
 
@@ -24,6 +25,9 @@ random_number = random.randrange(top_of_range)
 #if the use guess the correct number we will quit the while loop    
 #if not we will continue asking to guess by while loop
 while True:
+    #i also want to keep track of how many times user guessed the number before getting it correct
+    guesses+=1
+    
     #asking user to guess the random number
 
     user_guess=input("Guess a number: ")
@@ -40,6 +44,7 @@ while True:
     else:
         print("You got it wrong")
 
+print(f"You got it correct in {guesses} guesses")
     
         
     
