@@ -42,7 +42,13 @@ while True:
         print("You got it correct!")
         break
     else:
-        print("You got it wrong")
+        # now we want to tell the user if they were above the random number or below the random number
+        if user_guess>random_number:
+            print("You were above the number")
+        else:
+            print("you were below the number")    
+        
+             
 
 print(f"You got it correct in {guesses} guesses")
     
