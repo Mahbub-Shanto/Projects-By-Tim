@@ -1,12 +1,19 @@
-#for loop
-for i in [0,1,2]:
-    print("meow")
+#Introduction of continue and break
+while True:
+    n=int(input("What's n: "))
+    if n<=0:
+        continue
+    else:
+        break
+for _ in range(n):
+    print("shapty")
+    
     
 #another way
-for i in range(100):
-    print("meow")    
-
-#another way because we are not using the variable i
-for _ in range(4):
-    print("mahbub") 
+while True:
+    n=int(input("value of n: "))
+    if n>0:
+        break
+for _ in range(n):
+    print("shanto")
     
